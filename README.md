@@ -1,7 +1,9 @@
 
 # 🏏 IPL Data Analysis with PySpark & SQL
 
-This project performs an end-to-end exploratory data analysis (EDA) of Indian Premier League (IPL) datasets using **PySpark**, **Spark SQL**, and **Python**. It utilizes big data tools and techniques to uncover meaningful insights from ball-by-ball and match-level data hosted on **Amazon S3**, processed on **Databricks**.
+This project performs an end-to-end Exploratory Data Analysis (EDA) and builds a robust Spark-based ETL pipeline using **PySpark** and **SQL** to analyze IPL (Indian Premier League) cricket data. The goal is to extract meaningful insights from structured match and ball-by-ball datasets by applying Spark transformations, aggregations, window functions, and SQL queries at scale.
+
+Built entirely on **Apache** **Spark** with **Databricks** Community Edition, this project reads data directly from Amazon S3, processes it using PySpark DataFrames, and visualizes key findings using Matplotlib and Seaborn.
 
 ---
 
@@ -34,15 +36,7 @@ Using the power of distributed computing via PySpark, this project processes and
 All datasets were sourced from a public Amazon S3 bucket: `s3://ipl-data-analysis-project/`  
 Each dataset is read into Spark using predefined schemas for efficient processing.
 
-| Dataset Name        | Description                                                                 |
-|---------------------|-----------------------------------------------------------------------------|
-| `Ball_By_Ball.csv`  | Ball-by-ball event-level data including runs, wickets, batsmen, and bowlers |
-| `Match.csv`         | Match-level information like toss results, match winners, venues, etc.      |
-| `Player.csv`        | Player metadata including names and roles                                   |
-| `Player_match.csv`  | Mapping of players to matches (who played in which match)                   |
-| `Team.csv`          | Team metadata including team names and abbreviations                        |
-
-These datasets form the backbone of the analysis and were transformed into Spark DataFrames with custom schemas.
+- Ball_By_Ball.csv   Ball-by-ball event-level data including runs, wickets, batsmen, and bowlers - Match.csv          Match-level information like toss results, match winners, venues, etc.     - Player.csv         Player metadata including names and roles                                  - Player_match.csv   Mapping of players to matches (who played in which match)                  - Team.csv           Team metadata including team names and abbreviations                      
 
 ---
 
@@ -55,32 +49,32 @@ These datasets form the backbone of the analysis and were transformed into Spark
 
 ---
 
-## 📊 Key Insights Extracted
+##  Key Insights Extracted
 
-✅ Most Player of the Match awards  
-✅ Matches played per season  
-✅ Most matches played by team  
-✅ Toss decisions & toss-winning impact  
-✅ Top run scorers and wicket takers  
-✅ Total sixes/fours by player  
-✅ Matches won by team per season  
-✅ Venue-based win distribution  
-✅ Match outcome by toss decision
+✅ Top-scoring batsmen per season
+✅ Most economical bowlers in powerplay overs
+✅ Impact of toss decision on match outcome (win/loss)
+✅ Average runs scored by players in winning matches
+✅ Venue-wise average and highest total scores
+✅ Most common dismissal types
+✅ Team-wise performance after winning the toss
 
 ---
 
-## 📈 Visualizations
+##  Visualizations
 
 The project includes several bar charts and line plots built using **Matplotlib** and **Seaborn**, showcasing trends and comparisons such as:
 
-- Season-wise match count  
-- Player performance (runs, wickets, boundaries)  
-- Team wins & toss decisions  
-- Venue-based win patterns
+– Top 10 Most Economical Bowlers in Powerplay (Runs per Ball)
+– Impact of Toss Winner on Match Outcome (Won/Lost Split)
+– Top 10 Players with Highest Average Runs in Matches Their Team Won
+– Average and Highest Team Scores per Venue
+– Most Frequent Dismissal Types
+– Team Performance After Winning Toss
 
 ---
 
-## 📁 Folder Structure
+##  Folder Structure
 
 ```bash
 .
