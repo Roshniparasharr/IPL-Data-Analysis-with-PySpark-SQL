@@ -29,11 +29,7 @@ Using the power of distributed computing via PySpark, this project processes and
 
 ---
 
-Great! Since you're using **five datasets** instead of just two, and they’re all from your custom S3 path (`s3://ipl-data-analysis-project/`), here's the corrected and updated `## 📂 Datasets Used` section for your `README.md`:
-
----
-
-## 📂 Datasets Used
+## Datasets Used
 
 All datasets were sourced from a public Amazon S3 bucket: `s3://ipl-data-analysis-project/`  
 Each dataset is read into Spark using predefined schemas for efficient processing.
