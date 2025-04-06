@@ -86,7 +86,7 @@ The project uses **Matplotlib** and **Seaborn** to build insightful visualizatio
 
 ```bash
 .
-├── IPL_Data_Analysis_PySpark.ipynb   # Main analysis notebook
-├── README.md                         # Project documentation
-├── assets/                           # (Optional) Visuals or output charts
+├── IPL_Data_Analysis_PySpark.ipynb   
+├── README.md                         
+├── assets/                           
 ```
