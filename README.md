@@ -59,13 +59,13 @@ Each file was loaded into **Apache Spark** DataFrames using predefined schemas f
 
 ##  Key Insights Extracted
 
-✅ Top-scoring batsmen per season
-✅ Most economical bowlers in powerplay overs
-✅ Impact of toss decision on match outcome (win/loss)
-✅ Average runs scored by players in winning matches
-✅ Venue-wise average and highest total scores
-✅ Most common dismissal types
-✅ Team-wise performance after winning the toss
+-✅ Top-scoring batsmen per season
+-✅ Most economical bowlers in powerplay overs
+-✅ Impact of toss decision on match outcome (win/loss)
+-✅ Average runs scored by players in winning matches
+-✅ Venue-wise average and highest total scores
+-✅ Most common dismissal types
+-✅ Team-wise performance after winning the toss
 
 ---
 
