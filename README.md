@@ -31,12 +31,20 @@ Using the power of distributed computing via PySpark, this project processes and
 
 ---
 
-## Datasets Used
+Sure! Here's a clean and professional version of the section you shared:
+
+---
+
+## 📁 Datasets Used
 
 All datasets were sourced from a public Amazon S3 bucket: `s3://ipl-data-analysis-project/`  
-Each dataset is read into Spark using predefined schemas for efficient processing.
+Each file was loaded into **Apache Spark** DataFrames using predefined schemas for optimized performance and structured querying.
 
-- Ball_By_Ball.csv   Ball-by-ball event-level data including runs, wickets, batsmen, and bowlers - Match.csv          Match-level information like toss results, match winners, venues, etc.     - Player.csv         Player metadata including names and roles                                  - Player_match.csv   Mapping of players to matches (who played in which match)                  - Team.csv           Team metadata including team names and abbreviations                      
+- **Ball_By_Ball.csv** – Detailed ball-by-ball event data including runs scored, wickets taken, batsmen, and bowlers.  
+- **Match.csv** – Match-level details such as toss results, winners, venue information, and season.  
+- **Player.csv** – Player metadata including player names, IDs, and roles.  
+- **Player_match.csv** – Mapping of players to matches indicating which player participated in which game.  
+- **Team.csv** – Team-level metadata including team names, abbreviations, and IDs.
 
 ---
 
@@ -63,14 +71,14 @@ Each dataset is read into Spark using predefined schemas for efficient processin
 
 ##  Visualizations
 
-The project includes several bar charts and line plots built using **Matplotlib** and **Seaborn**, showcasing trends and comparisons such as:
+The project uses **Matplotlib** and **Seaborn** to build insightful visualizations that highlight key IPL trends and comparisons. These include:
 
-– Top 10 Most Economical Bowlers in Powerplay (Runs per Ball)
-– Impact of Toss Winner on Match Outcome (Won/Lost Split)
-– Top 10 Players with Highest Average Runs in Matches Their Team Won
-– Average and Highest Team Scores per Venue
-– Most Frequent Dismissal Types
-– Team Performance After Winning Toss
+-  **Top 10 Most Economical Bowlers** in Powerplay (Average Runs per Ball)  
+-  **Impact of Toss Winner** on Match Outcome (Win/Loss Analysis)  
+-  **Top 10 Batsmen by Average Runs** in Matches Their Team Won  
+-  **Venue-wise Analysis** of Average and Highest Team Scores  
+-  **Most Frequent Dismissal Types** (e.g., bowled, caught, etc.)  
+-  **Team-wise Performance** After Winning the Toss
 
 ---
 
